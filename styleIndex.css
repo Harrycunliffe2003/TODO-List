@@ -1,0 +1,155 @@
+body{
+    background-image: url('/Images/—Pngtree—abstract\ cyan\ lights\ background\ design_2385694.jpg');
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow:hidden;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-radius: 15px;
+    border-color: plum;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 7vh;
+}
+#add{
+    text-align: center;
+    position: relative;
+    left: 48%
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 88vh;
+    flex-direction: column;
+}
+#form{
+    text-align: center;
+}
+.inp-border {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    max-width: 300px;
+  }
+  
+  .input {
+    text-align: center;
+    padding: 15px;
+    outline: none;
+    border: double 0;
+    background: #252525;
+    border-radius: 50px;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .a1 {
+    background: linear-gradient(
+      330.28deg,
+      #ff6e1d 100%,
+      #ff6e1d 100%,
+      #ff6e1d 100%
+    );
+  }
+  
+  .a1 > input {
+    color: #caab98;
+  }
+  
+
+  .inp-border:focus-within {
+    background: linear-gradient(
+      330.28deg,
+      #2cfff2 0%,
+      #1e78ff 30.73%,
+      #ff54a6 55.73%,
+      #ff6e1d 79.17%,
+      #ff3e3e 100%
+    );
+  }
+  
+  .inp-border:hover {
+    background: linear-gradient(
+      330.28deg,
+      #2cfff2 0%,
+      #1e78ff 30.73%,
+      #ff54a6 55.73%,
+      #ff6e1d 79.17%,
+      #ff3e3e 100%
+    );
+  }
+  
+#todoLab{
+    text-align: center;
+    
+}
+.items{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin: 15px;
+}
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #0072ff;
+  }
+  
+  .button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+  }
+  
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .button:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  .button:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
