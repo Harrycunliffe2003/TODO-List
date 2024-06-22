@@ -1,3 +1,7 @@
+@font-face {
+  font-family: scholarly;
+  src: url(ScholarlyAmbitionRegular-PKdwB.ttf);
+}
 body{
     background-image: url('/Images/—Pngtree—abstract\ cyan\ lights\ background\ design_2385694.jpg');
 
@@ -26,11 +30,11 @@ body{
     position: relative;
     left: 48%
 }
-.content{
+.formContent{
     display: flex;
     align-items: center;
-    justify-content:center;
-    height: 88vh;
+    justify-content:end;
+    height: 50vh;
     flex-direction: column;
 }
 #form{
@@ -97,11 +101,18 @@ body{
     text-align: center;
     
 }
+.listContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y:auto;
+}
 .items{
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    margin: 15px;
+  overflow-y: auto;
+  width:30vw;
+  height:30vh;
+
+
 }
 .button {
     display: inline-block;
@@ -153,3 +164,28 @@ body{
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
   }
+
+  .listItem{
+    font-family: scholarly;
+    font-size: 50px;
+    background: linear-gradient(aqua, darkblue);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+    display: list-item;
+  }
+.items::-webkit-scrollbar {
+    width: 12px;
+}
+
+.items::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.items::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636;
+}
