@@ -52,28 +52,6 @@ nav{
 .sidebar nav ul li a:hover {
     text-decoration: underline;
 }
-
-.main-content {
-    margin-left: 270px;
-    padding: 20px;
-    flex-grow: 1;
-}
-
-.main-content section {
-    margin-bottom: 40px;
-}
-
-.main-content h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.main-content p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 10px;
-}
 .linkedIn{
     position:absolute;
     left:85%;
@@ -168,4 +146,55 @@ nav{
     scale:1.4;
     color: darkred;
     cursor: pointer;
+}
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+#top{
+    height:50%;
+    border-bottom: solid 1px;
+    margin: 1%;
+
+    display:flex;
+}
+#topleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#topright{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#location{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#latLong{
+
+}
+#bottom{
+    height:48%;
+    width:50%;
+    border-right: solid 1px;
 }
