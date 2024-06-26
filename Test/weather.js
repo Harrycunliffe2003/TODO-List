@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2852&longitude=-1.52&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,precipitation,rain,wind_speed_10m&forecast_days=1')
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,rain,weather_code,wind_speed_10m')
     .then(response => {
         if(!response.ok){
             throw new error('Bad API response');
@@ -20,7 +20,13 @@ $(document).ready(function() {
         let currentWind = wind[0];
 
 
-        $('#left').append(`<p1 id=#latLong>${lat} : ${long}</p1>`);
+        $('#topleft').append(`<p1 id="latLong">${lat} : ${long}</p1>`);
+        $('#weather').append(`<h1 id="temp">Temperature: ${currentTemp}°C</h1>`);
+        $('#weather').append(`<p1 id="humidity">Humidity: ${currentHumidity}%</p1>`);
+        $('#weather').append(`
+            <p1 id="wind">Wind-Speed: ${currentWind} km/h 
+            <span id="rain">Precipitation: ${currentRain} </span></p1>`);
+
 
         //let humid = Data
 

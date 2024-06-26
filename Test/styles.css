@@ -184,17 +184,56 @@ nav{
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#weather{
+    width:65%;
+    height: 85%;
+    --color: linear-gradient(aqua, rgb(239, 166, 139));
+    background: var(--color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#temp{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+}
+#humidity{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8vw;
+    margin-bottom: 30%;
+}
+#wind{
+    position: relative;
+    right: 10%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+}
+#rain{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 25%;
+    font-size: 1.2vw;
 }
 #location{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 2vw;
+    margin-bottom: 10px ;
 }
 #latLong{
-
+    font-size: 18px;
 }
+
 #bottom{
     height:48%;
     width:50%;
-    border-right: solid 1px;
 }
