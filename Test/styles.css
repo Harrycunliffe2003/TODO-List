@@ -8,7 +8,11 @@
 body {
     display: flex;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-image: url(bgImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fixed;
 }
 
 .container {
@@ -27,6 +31,7 @@ body {
     height: 100vh;
     /*left: -180px;*/
     transition: 0.5s;
+    opacity: 0.9;
 }
 .sidebar:hover{
     left:0;
@@ -170,70 +175,119 @@ nav{
 }
 #top{
     height:50%;
-    border-bottom: solid 1px;
+    border-top: solid 1px;
     margin: 1%;
 
     display:flex;
-}
-#topleft{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-#topright{
-    width: 50%;
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 #weather{
     width:65%;
     height: 85%;
-    --color: linear-gradient(aqua, rgb(239, 166, 139));
+    --color: linear-gradient(135deg, #00febac5, #5b548a);
+    opacity: 0.8;
     background: var(--color);
+    box-shadow: 0 0 15px var(--color);
     border-radius: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    padding: 30px;
+    overflow-y: auto;
+}
+#weatherTop{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#weatherBottom{
+    position:relative;
+    width:100%;
 }
 #temp{
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.5vw;
-    margin-bottom: 5%;
+    font-size: 2vw;
+    margin-bottom: 7px;
+    
 }
 #humidity{
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.8vw;
-    margin-bottom: 30%;
+    margin-bottom: 50px;
 }
 #wind{
-    position: relative;
-    right: 10%;
+    position: absolute;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2vw;
+    top: 30%;
+    margin-left: 15px;
+    
 }
 #rain{
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    left: 25%;
-    font-size: 1.2vw;
+    position: absolute;
+    left:93%;
+    top: 30%;
+    margin-left: 15px;
 }
 #location{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 10px ;
+    font-weight: bold;
+ 
 }
 #latLong{
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
 #bottom{
-    height:48%;
-    width:50%;
+    height:40%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+.svg-icon {
+    width: 3vw;
+    height: 6vh;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #000000;
+  }
+  
+  .svg-icon circle {
+    stroke: #000000;
+    stroke-width: 1;
+  }
+  #wind-icon{
+  }
+  #rain-icon{
+    position: absolute;
+    left: 86%;
+  }
+  .form-control-search {
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    border-style: none;
+    color: rgb(136, 133, 133);
+    width: 500px;
+    height: 60px;
+    font-size: larger;
+  }
+  #google{
+    height: 80%;
+  }
+

@@ -12,7 +12,7 @@
     <div class="container">
         <aside class="sidebar">
             <section class="notes"> 
-                <h2>notes</h2>
+                <h2>TODO</h2>
                 <svg class="noteIcon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/>
                   </svg>
@@ -49,20 +49,25 @@
                 </ul>
             </nav>
         </aside>
-        <!-- Main Content: Divided into 4 subsections, top, topleft, topright and bottom-->
+        <!-- Main Content: Divided into 4 subsections, top, topleft, topright and bottom: Note that top and bottom are swapped-->
         <main class="main-content"> 
+            <div id="bottom">
+                <img src="/Images/Google.png" id = 'google'>
+                <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                    <input name="sitesearch" type="hidden">
+                    <input autocomplete="on" class="form-control-search" name="q" placeholder="Search Google" required="required"  type="text"><br>
+                </form>
+            </div>
             <div id="top">
-                <div id="topleft">
-                    <h1 id="location">Royal Leamington Spa</h1>
-                </div>
-                <div id="topright">
-                    <div id="weather">
-                        
+                <div id="weather">
+                    <div id="weatherTop">
+                        <h1 id="location">Royal Leamington Spa</h1>
+                    </div>
+                    <div id="weatherBottom">
                     </div>
                 </div>
             </div>
-            <div id="bottom">
-            </div>
+
         </main>
     </div>
     <script src="test.js"></script>
