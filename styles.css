@@ -28,7 +28,7 @@ body {
     color: #fff;
     padding: 20px;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     /*left: -180px;*/
     transition: 0.5s;
     opacity: 0.9;
@@ -36,16 +36,20 @@ body {
 .sidebar:hover{
     left:0;
 }
-nav{
-    position: relative;
-}
+
 .sidebar nav ul {
-    list-style: none;
     border-top: solid 2px;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .sidebar nav ul li {
-    margin: 30px 0;
+    margin-bottom: 8%;
+    margin-top: 10%;
 }
 
 .sidebar nav ul li a {
@@ -59,19 +63,19 @@ nav{
 }
 .linkedIn{
     position:absolute;
-    left:85%;
+    left: 80%;
     scale: 1.5;
     color:darkgrey;
 }
 .git{
     position:absolute;
-    left:85%;
+    left: 80%;
     scale: 1.5;
     color:darkgrey;
 }
 .youtube{
     position:absolute;
-    left:85%;
+    left:80%;
     scale: 1.5;
     color:darkgrey;
 }
@@ -92,7 +96,7 @@ nav{
 .noteContent{
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 60%;
     overflow-y: auto;
     
 }

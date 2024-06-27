@@ -28,7 +28,7 @@ body {
     color: #fff;
     padding: 20px;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     /*left: -180px;*/
     transition: 0.5s;
     opacity: 0.9;
